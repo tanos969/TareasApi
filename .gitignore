@@ -1,0 +1,12 @@
+env
+venv
+*.pyc
+*.bak
+__pycache__
+.vscode
+.env
+.vscode
+*.swp
+migrations/
+files/
+db/

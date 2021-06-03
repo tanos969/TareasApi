@@ -1,0 +1,25 @@
+# Raw Development
+version: '3.7'
+
+services:
+
+  tarea:
+    build: .
+    volumes:
+      - "/home/angel/Documentos/pruebas/example-djangorest/Prueba:/usr/src/api"
+      - sockets:/tmp/sockets
+    restart: always
+    ports:
+      - '8080:8080' # Flask application
+    networks:
+      - proxynet
+    tty: true
+    command: bash
+
+volumes:
+  db-data:
+  sockets:
+
+networks:
+  proxynet:
+    name: tareas_custom_network

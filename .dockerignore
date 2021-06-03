@@ -1,0 +1,8 @@
+# .dockerignore
+.git
+.dockerignore
+dockerfile
+docker-compose.yml
+**/__pycache__
+*.pyc
+*.swp
